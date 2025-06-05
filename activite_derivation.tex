@@ -1,0 +1,80 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\title{Activité d'introduction à la notion de nombre dérivé}
+\begin{document}
+\begin{frame}
+ \titlepage
+\end{frame}
+\begin{frame}{Graphique 1}
+ \includegraphics[width=0.8\textwidth]{https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Graphique1.png?raw=true}
+ \small Le graphique au-dessus est issu d’un carnet de santé, il montre des courbes de croissance de la taille des filles de 1 mois à 3 ans. On considère dans la suite la courbe centrale qui correspond à la croissance médiane (en chaque point, 50~\% des filles ont une taille plus grande et 50~\% une taille plus petite).\\[1ex]
+ \textbf{Source :} \href{https://solidarites-sante.gouv.fr/IMG/pdf/carnet_de_sante-num-.pdf}{Lien vers le graphique}
+\end{frame}
+\begin{frame}{Graphique 2}
+ \textbf{\emph{On considère la courbe médiane représentée ci-dessous.}}\\[1ex]
+ \includegraphics[width=0.8\textwidth]{https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Graphique2.png?raw=true}
+ \begin{block}{Partie 1 : Zoom sur la courbe}
+ Ouvrez l’activité GeoGebra via ce \href{https://www.geogebra.org/m/v9rsqxyn}{lien}.
+ \begin{enumerate}
+  \item Déplacez le point A où vous voulez sur la courbe.
+  \item Zoomez sur la courbe avec le bouton Toolbar Image.
+  \item Revenez au cadrage initial, recommencez avec une autre position du point A.
+ \end{enumerate}
+ \end{block}
+ \textbf{Que remarquez-vous ?}
+\end{frame}
+\begin{frame}{Partie 2 : Entre 1 et 28 mois}
+ Ouvrez l’activité GeoGebra \href{https://www.geogebra.org/m/umdpscqe}{ici}.\\[1ex]
+ \textbf{\emph{Taille médiane des filles de 1 à 3 mois}}\\[1ex]
+ \includegraphics[width=0.8\textwidth]{https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Graphique3.png?raw=true}
+ Dans cette partie, on considère le \textbf{Graphique 3}. La taille médiane à 1 mois est l’ordonnée du point \textbf{A} de la courbe d’abscisse 1 et la taille médiane à 28 mois est celle du point \textbf{M} d’abscisse 28.
+ \begin{enumerate}
+  \item Entre 1 an et 28 mois, de combien de cm cette fille a-t-elle grandi ?
+  \item Quel est le coefficient directeur (ou pente) de la sécante (AM) à la courbe ?
+  \item Quelle serait l’unité de ce coefficient directeur ?
+  \item Que représente ce coefficient directeur en termes de vitesse de croissance ?
+ \end{enumerate}
+\end{frame}
+\begin{frame}{Partie 3 : à l'âge de 1 mois}
+ À 24 mois, la taille médiane d’une fille est de 86,7~cm.\\
+ À 1 mois, la taille médiane d’une fille est de 53~cm.
+ \begin{enumerate}
+  \item Quelle a été la vitesse moyenne de croissance de cette jeune fille entre 1 mois et 24 mois ?
+  \item Recopiez et complétez le tableau ci-dessous :
+ \end{enumerate}
+ \includegraphics[width=0.8\textwidth]{https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Tableau1.png?raw=true}
+ \begin{enumerate}
+  \setcounter{enumi}{2}
+  \item À l'âge de 1 mois, quelle est la vitesse de croissance de cette fille ? Comment le savoir ? Proposez une méthode.
+  \item Comment tracer la droite passant par le point A(1,53) et de coefficient directeur la \emph{vitesse instantanée} de croissance de la taille à l’âge de 1 mois estimée à la question précédente ? Cette droite est la \emph{tangente} à la courbe au point A. Déterminez une équation de cette tangente.
+ \end{enumerate}
+\end{frame}
+\begin{frame}{Partie 4 : vitesse instantanée}
+ Ouvrez l’activité GeoGebra \href{https://www.geogebra.org/m/xht3pru8}{ici}.\\[1ex]
+ 1. Effectuez plusieurs fois la séquence suivante :
+ \begin{itemize}
+  \item \emph{Choisissez un point A ;}
+  \item \emph{Tracez la tangente et la sécante (AM) ;}
+  \item \emph{Déplacez M pour le faire se rapprocher de A ;}
+  \item \emph{Comparez les équations de ces deux droites ;}
+  \item \emph{Recommencez au premier point avec une autre position du point A.}
+ \end{itemize}
+ Complétez le tableau suivant :
+ \includegraphics[width=0.8\textwidth]{https://github.com/RaphaelSellam/presentation-intro-nombre-derive/blob/main/images/Tableau2.png?raw=true}
+\end{frame}
+\begin{frame}{Partie 5 : tangente et approximation locale}
+ \textbf{1. Approximation locale.}\\[1ex]
+ Ouvrez l’activité GeoGebra \href{https://www.geogebra.org/m/btx5btdu}{ici}.\\[1ex]
+ En cliquant sur le bouton avec la loupe Toolbar Image, on peut zoomer autour d’un point A avec un facteur 2 à chaque fois. Faire des essais avec plusieurs positions du point A. Si on effectue un zoom assez important, qu’observe-t-on entre la courbe et la tangente ?\\[2ex]
+ \textbf{2. Extrapolation :}
+ \begin{itemize}
+  \item[a.] Quelle est la vitesse instantanée de croissance en cm/mois à l’âge d’un an ?
+  \item[b.] Quelle taille mesurerait une fille à l’âge de 12 ans si sa croissance gardait la même vitesse à partir de l’âge d’un an ?
+  \item[c.] Comment serait la courbe de taille en fonction de l’âge si la vitesse instantanée de croissance de la taille était constante ?
+ \end{itemize}
+\end{frame}
+\end{document}
